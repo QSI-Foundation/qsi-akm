@@ -11,20 +11,20 @@
 
 #include "Universal_Types.h"
 
- typedef struct SHA_256_HMAC {
+ typedef struct _SHA_256_HMAC {
 
-      uint8_t  SHA_256_Byte_Array [32];
+      U8  SHA_256_Byte_Array [32];
 
-  } SHA_256_HMAC_t;
+  } SHA_256_HMAC;
 
- typedef struct SHA_512_HMAC {
+ typedef struct _SHA_512_HMAC {
 
-      uint8_t  SHA_512_Byte_Array [64];
+      U8  SHA_512_Byte_Array [64];
 
-  } SHA_256_HMAC_t;
+  } SHA_512_HMAC;
 
   /* Default Size of HMAC is 256-bits */
-  typedef SHA_256_HMAC_t  HMAC_Key_t;
+  typedef  SHA_256_HMAC  HMAC_KEY;
 
  
 #endif /* COMMON_INCLUDE_HMAC_INFO_H_ */

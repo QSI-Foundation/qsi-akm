@@ -9,26 +9,26 @@
 #ifndef AES_ENCRYPTION_INFO_H_
 #define AES_ENCRYPTION_INFO_H_
 
-#include "Universal_Types.h"
+#include "Types.h"
 
   /* Core Types */
 
-  typedef struct {
-      uint64_t  _64_bits_0_through_63;
-      uint64_t  _64_bits_64_through_127;
-  } AES_128_Bit_Encryption_Key_t;
+  typedef struct _AES_128_BIT_ENCRYPTION_KEY {
+      U64  _64_bits_0_through_63;
+      U64  _64_bits_64_through_127;
+  } AES_128_BIT_ENCRYPTION_KEY, *PAES_128_BIT_ENCRYPTION_KEY;
 
-  typedef struct {
-      uint64_t  _64_bits_0_through_63;
-      uint64_t  _64_bits_64_through_127;
-      uint64_t  _64_bits_128_through_191;
-  } AES_192_Bit_Encryption_Key_t;
+  typedef struct _AES_192_BIT_ENCRYPTION_KEY {
+      U64  _64_bits_0_through_63;
+      U64  _64_bits_64_through_127;
+      U64  _64_bits_128_through_191;
+  } AES_192_BIT_ENCRYPTION_KEY, *PAES_192_BIT_ENCRYPTION_KEY;
 
-  typedef struct {
-      uint64_t  _64_bits_0_through_63;
-      uint64_t  _64_bits_64_through_127;
-      uint64_t  _64_bits_128_through_191;
-      uint64_t  _64_bits_192_through_255;
-  } AES_256_Bit_Encryption_Key_t;
+  typedef struct _AES_256_BIT_ENCRYPTION_KEY {
+      U64  _64_bits_0_through_63;
+      U64  _64_bits_64_through_127;
+      U64  _64_bits_128_through_191;
+      U64  _64_bits_192_through_255;
+  } AES_256_BIT_ENCRYPTION_KEY, *PAES_256_BIT_ENCRYPTION_KEY;
 
 #endif /* AES_ENCRYPTION_INFO_H_ */
